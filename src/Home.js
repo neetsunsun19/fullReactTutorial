@@ -31,7 +31,7 @@ const Home = () => {
 
     return (
         <div className="home">
-            {blogs && <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete}></BlogList>}
+            {blogs && <BlogList blogs={blogs} title="All Blogs!"></BlogList>}
             {/* <BlogList blogs={blogs.filter((blog) => blog.author === 'mario')} title="Mario's Blogs!"></BlogList> */}
             <button onClick={() => setName('luigi')}>Change Name</button>
             <p>{name}</p>
